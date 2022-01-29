@@ -22,7 +22,8 @@ namespace BasicCorePrograms
                                + "\n 8.Swap Two Numbers"
                                + "\n 9. Even or Odd"
                                + "\n 10. Vowel Or Consonant"
-                               + "\n 11.Exit \n");
+                               + "\n 11.Find Largest Among Three Numbers"
+                               + "\n 12.Exit \n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -66,7 +67,11 @@ namespace BasicCorePrograms
                         VowelOrConsonant vowelconsonant = new VowelOrConsonant();
                         vowelconsonant.checkVowelOrNot();
                         break;
-                    case 11: flag = false;
+                    case 11:
+                        LargestAmongThreeNumbers largestnumber = new LargestAmongThreeNumbers();
+                        largestnumber.CheckLargestNumber();
+                        break;
+                    case 12: flag = false;
                         break;
                     default: Console.WriteLine("Choose Correct option");
                         break;
