@@ -46,7 +46,11 @@ namespace BasicCorePrograms
                         Factors factors = new Factors();
                         factors.FindFactors();
                         break;
-                    case 7: flag = false;
+                    case 7:
+                        QuotientRemainder qm = new QuotientRemainder();
+                        qm.CalQuoRem();
+                        break;
+                    case 8: flag = false;
                         break;
                     default: Console.WriteLine("Choose Correct option");
                         break;
