@@ -20,7 +20,8 @@ namespace BasicCorePrograms
                                + "\n 6.Factors"
                                + "\n 7.Quotient Remainder"
                                + "\n 8.Swap Two Numbers"
-                               + "\n 7.Exit \n");
+                               + "\n 9. Even or Odd"
+                               + "\n 10.Exit \n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -56,7 +57,11 @@ namespace BasicCorePrograms
                         SwapTwoNumbers swap = new SwapTwoNumbers();
                         swap.Swap();
                         break;
-                    case 9: flag = false;
+                    case 9 :
+                        EvenOdd evenodd = new EvenOdd();
+                        evenodd.CheckEvenOrOdd();
+                        break;
+                    case 10: flag = false;
                         break;
                     default: Console.WriteLine("Choose Correct option");
                         break;
