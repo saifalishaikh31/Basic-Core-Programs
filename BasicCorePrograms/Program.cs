@@ -21,7 +21,8 @@ namespace BasicCorePrograms
                                + "\n 7.Quotient Remainder"
                                + "\n 8.Swap Two Numbers"
                                + "\n 9. Even or Odd"
-                               + "\n 10.Exit \n");
+                               + "\n 10. Vowel Or Consonant"
+                               + "\n 11.Exit \n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -61,7 +62,11 @@ namespace BasicCorePrograms
                         EvenOdd evenodd = new EvenOdd();
                         evenodd.CheckEvenOrOdd();
                         break;
-                    case 10: flag = false;
+                    case 10:
+                        VowelOrConsonant vowelconsonant = new VowelOrConsonant();
+                        vowelconsonant.checkVowelOrNot();
+                        break;
+                    case 11: flag = false;
                         break;
                     default: Console.WriteLine("Choose Correct option");
                         break;
