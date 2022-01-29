@@ -12,12 +12,14 @@ namespace BasicCorePrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine(" 1.FlipCoin."
+                Console.WriteLine("\n 1.FlipCoin."
                                + "\n 2.LeapYear."
                                + "\n 3.ReplaceString"
                                + "\n 4.Power Of Two"
                                + "\n 5.Harmonic Number"
                                + "\n 6.Factors"
+                               + "\n 7.Quotient Remainder"
+                               + "\n 8.Swap Two Numbers"
                                + "\n 7.Exit \n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -50,7 +52,11 @@ namespace BasicCorePrograms
                         QuotientRemainder qm = new QuotientRemainder();
                         qm.CalQuoRem();
                         break;
-                    case 8: flag = false;
+                    case 8:
+                        SwapTwoNumbers swap = new SwapTwoNumbers();
+                        swap.Swap();
+                        break;
+                    case 9: flag = false;
                         break;
                     default: Console.WriteLine("Choose Correct option");
                         break;
